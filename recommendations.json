@@ -1,1 +1,425 @@
-[]
+[
+  {
+    "metric": "windows_cpu_clock_interrupts_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_core_frequency_mhz",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_cstate_seconds_total",
+    "drop_labels": [
+      "core",
+      "state"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_dpcs_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_idle_break_events_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_interrupts_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_parking_status",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_processor_mperf_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_processor_performance_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_processor_privileged_utility_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_processor_rtc_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_cpu_processor_utility_total",
+    "drop_labels": [
+      "core"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_exporter_collector_duration_seconds",
+    "drop_labels": [
+      "collector"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_exporter_collector_success",
+    "drop_labels": [
+      "collector"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_exporter_collector_timeout",
+    "drop_labels": [
+      "collector"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_avg_read_requests_queued",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_avg_write_requests_queued",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_idle_seconds_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_read_latency_seconds_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_read_seconds_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_read_write_latency_seconds_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_requests_queued",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_split_ios_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_write_latency_seconds_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logical_disk_write_seconds_total",
+    "drop_labels": [
+      "volume"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_logon_session_logon_timestamp_seconds",
+    "drop_labels": [
+      "domain",
+      "id",
+      "type",
+      "username"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_net_nic_address_info",
+    "drop_labels": [
+      "address",
+      "friendly_name",
+      "nic"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_net_packets_received_total",
+    "drop_labels": [
+      "nic"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_net_packets_received_unknown_total",
+    "drop_labels": [
+      "nic"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_net_packets_sent_total",
+    "drop_labels": [
+      "nic"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_net_packets_total",
+    "drop_labels": [
+      "nic"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_scheduled_task_last_result",
+    "drop_labels": [
+      "task"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_scheduled_task_missed_runs",
+    "drop_labels": [
+      "task"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_scheduled_task_state",
+    "drop_labels": [
+      "state",
+      "task"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_connection_failures_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_connections_active_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_connections_passive_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_connections_reset_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_connections_state_count",
+    "drop_labels": [
+      "af",
+      "state"
+    ],
+    "aggregations": [
+      "count",
+      "sum",
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_segments_received_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_segments_retransmitted_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_segments_sent_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "windows_tcp_segments_total",
+    "drop_labels": [
+      "af"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  }
+]
